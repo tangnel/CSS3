@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css3阴影</title>
+    <style>
+        #snowy{
+            width:100px;
+            height:45px;
+            background:red;
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+        #snowy::before{
+            content: "";
+            width: 17px;
+            height: 4px;
+            position: absolute;
+            left: 10px;
+            top: 26px;
+            border-radius: 50%;
+            box-shadow: 100px 43px 2px 26px red, 121px 13px 4px 22px red, 166px 28px 4px 22px red, 190px 52px 4px 22px red, 144px 56px 4px 22px red;
+        }
+        #snowy::after{
+            content: "";
+            width: 127px;
+            height: 3px;
+            position: absolute;
+            left: 100px;
+            top: 175px;
+            border-radius: 50%;
+            background: #ccc;
+            box-shadow: 0px 0px 4px 6px #ccc;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="snowy"></div>
+</body>
+</html>
