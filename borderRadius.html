@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>border图形</title>
+    <style>
+        #canvas1{width:300px; height:300px; position:relative; overflow: hidden; }
+        #canvas1 div{width:598px; height: 598px; position:absolute; left:0; top:0; border:1px solid red; border-radius: 50%;}
+        #canvas1 .left-top{border-bottom:none; border-right:none;}
+        #canvas1 .right-top{border-top:none; border-left:none; border-color:purple; left:-100%; top:-100%;}
+        #canvas1 .left-bottom{border-right:none; border-top:none; top:-100%; border-color:blue}
+        #canvas1 .right-bottom{border-bottom:none; border-left:none; left: -100%; border-color:green;}
+
+        #canvas2{width:300px; height:300px; position:relative; overflow: hidden; }
+        #canvas2 div{width:148px; height: 148px; position:absolute; left:0; top:0; border:1px solid red; border-radius: 50%;}
+        #canvas2 .left-top{ border-bottom-right-radius: 0;}
+        #canvas2 .right-top{border-bottom-left-radius: 0; border-color:purple; left:50%; }
+        #canvas2 .left-bottom{border-top-right-radius: 0; top:50%; border-color:blue}
+        #canvas2 .right-bottom{border-top-left-radius: 0; top:50%; left: 50%; border-color:green;}
+
+        #canvas3{width:300px; height:300px; position:relative; overflow: hidden; border-radius:50%; border:1px solid red;}
+        #canvas3 div{width:300px; height: 300px; position:absolute; left:0; top:0; border:1px solid red; border-radius: 50%;}
+        #canvas3 .left-top{left:-50%; top:-50%; }
+        #canvas3 .right-top{left:50%; top:-50%; }
+        #canvas3 .left-bottom{left:-50%; top:50%;}
+        #canvas3 .right-bottom{left:50%; top:50%;}
+        #heart{position: relative;width:150px; margin-top: 200px; margin-left:100px;}
+        #heart .left{width: 180px;height: 170px;position: absolute;left: -10px;top: -71%;background-color: red;border-radius: 49%; }
+        #heart .right{width: 180px;height: 170px;position: absolute;left: 87%;top: -71%;background-color: red;border-radius: 50%;}        
+        #heart .bottom{width: 0;height: 0;border-left: 150px solid transparent;border-right: 150px solid transparent;border-top: 180px solid red;border-top-left-radius: 15%;border-top-right-radius: 15%;}
+    </style>
+</head>
+<body>
+    <div id="canvas1">
+        <div class="left-top"></div>
+        <div class="right-top"></div>
+        <div class="left-bottom"></div>
+        <div class="right-bottom"></div>
+    </div>
+    <div id="canvas2">
+            <div class="left-top"></div>
+            <div class="right-top"></div>
+            <div class="left-bottom"></div>
+            <div class="right-bottom"></div>
+    </div>
+    <div id="canvas3">
+        <div class="left-top"></div>
+        <div class="right-top"></div>
+        <div class="left-bottom"></div>
+        <div class="right-bottom"></div>
+    </div>
+    <div id="heart">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="bottom"></div>
+    </div>
+</body>
+</html>
